@@ -29,7 +29,7 @@ class Stack {
   }
   toString() {
     let result = '';
-    if (!this.store.length) return result;
+    
     for (const value of this.store) {
       result += `${value} ${
         this.store[this.store.indexOf(value) + 1] ? '-> ' : ''
